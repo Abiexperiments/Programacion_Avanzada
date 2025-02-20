@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoanAssistant.LoanAssistantPage"
+             Title="NewPage1">
+
+    <Grid Padding="20" RowSpacing="10" ColumnSpacing="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Labels and Entry Fields -->
+        <Label Text="Loan Balance:" Grid.Row="0" Grid.Column="0"/>
+        <Entry x:Name="balanceEntry" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+        <Label Text="Interest Rate (%):" Grid.Row="1" Grid.Column="0"/>
+        <Entry x:Name="interestEntry" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+        <Label Text="Number of Payments:" Grid.Row="2" Grid.Column="0"/>
+        <Entry x:Name="monthsEntry" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+
+        <Label Text="Monthly Payment:" Grid.Row="3" Grid.Column="0"/>
+        <Entry x:Name="paymentEntry" Keyboard="Numeric" IsReadOnly="True" Grid.Row="3" Grid.Column="1"/>
+
+        <!-- Buttons -->
+        <Button x:Name="computeButton" Text="Compute Monthly Payment" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Clicked="ComputeLoan"/>
+        <Button x:Name="resetButton" Text="New Loan Analysis" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Clicked="ResetForm" IsEnabled="False"/>
+        <Button x:Name="exitButton" Text="Exit" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Clicked="ExitApp"/>
+
+        <!-- Analysis Output -->
+        <Label Text="Loan Analysis:" FontAttributes="Bold" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Label x:Name="analysisLabel" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"/>
+    </Grid>
+</ContentPage>
