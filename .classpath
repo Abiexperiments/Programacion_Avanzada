@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Tarea02"/>
+	<classpathentry kind="src" path="Tarea03"/>
+	<classpathentry kind="src" path="Tarea04"/>
+	<classpathentry kind="src" path="Tarea0"/>
+	<classpathentry kind="src" path="Tarea06"/>
+	<classpathentry kind="src" path="Tarea07"/>
+	<classpathentry kind="src" path="Tarea08"/>
+	<classpathentry kind="src" path="Tarea09"/>
+	<classpathentry kind="src" path="Ejercicio_Unidad1"/>
+	<classpathentry kind="src" path="FLASCARDS"/>
+	<classpathentry kind="src" path="Tarea12"/>
+	<classpathentry kind="src" path="Act01"/>
+	<classpathentry kind="src" path="Ejercicio_Clase"/>
+	<classpathentry kind="src" path="Tarea013"/>
+	<classpathentry kind="lib" path="com.jgoodies.forms_1.9.0.v20240327-0800.jar"/>
+	<classpathentry kind="lib" path="com.jgoodies.common_1.8.1.v20240327-0800.jar"/>
+	<classpathentry kind="lib" path="com.miglayout.swing_11.4.2.jar"/>
+	<classpathentry kind="lib" path="com.miglayout.core_11.4.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abiga/Downloads/gson-2.8.9.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
